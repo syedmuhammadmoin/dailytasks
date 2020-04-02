@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <style>
+        .success, .error{
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success{
+            background: green;
+        }
+
+        .error{
+            background: red;
+        }
+    </style>
+    <title>Ticketing System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Tasks</h1>
+        <form id="task-form">
+            <div>
+                <label for="title">Task Title</label>
+                <input type="text" id="title" class="u-full-width">    
+            </div>
+            <div>
+                <label for="agent">Agent Name</label>
+                <input type="text" id="agent" class="u-full-width">    
+            </div>
+            <div>
+                <label for="isbn">Department/User</label>
+                <input type="text" id="dept" class="u-full-width">    
+            </div>
+            <div>
+                <input type="submit" value="submit" class="u-full-width">
+            </div>
+        </form>
+
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Agent Name</th>
+                    <th>Department/User</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>    
+    <script src="appes6.js"></script>
+</body>
+</html>
